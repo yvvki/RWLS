@@ -17,4 +17,4 @@ plugins {
 }
 
 rootProject.name = "RWLS"
-include("app", "list", "utilities")
+include(":app")

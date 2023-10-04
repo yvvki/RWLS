@@ -3,8 +3,6 @@ plugins {
 }
 
 dependencies {
-    implementation(libs.apache.commons.text)
-    implementation(project(":utilities"))
 }
 
 application {
