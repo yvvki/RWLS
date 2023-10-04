@@ -3,5 +3,8 @@ plugins {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.10")
+    // https://github.com/gradle/gradle/issues/15383
+    implementation(files(libs::class.java.superclass.protectionDomain.codeSource.location))
+
+    implementation(libs.bundles.gradle.convention)
 }
