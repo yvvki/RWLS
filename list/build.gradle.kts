@@ -5,5 +5,5 @@
  */
 
 plugins {
-    id("id.synth.rwls.kotlin-library-conventions")
+    id("id.synth.rwls.library")
 }

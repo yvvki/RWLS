@@ -5,4 +5,4 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "RWLS-build-logic"
+rootProject.name = "build-logic"

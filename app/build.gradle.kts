@@ -5,7 +5,7 @@
  */
 
 plugins {
-    id("id.synth.rwls.kotlin-application-conventions")
+    id("id.synth.rwls.application")
 }
 
 dependencies {
