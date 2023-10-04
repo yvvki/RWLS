@@ -18,5 +18,6 @@ plugins {
 
 rootProject.name = "RWLS"
 include(":app")
-
 include(":server")
+
+include(":core:utilities")
