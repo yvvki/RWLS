@@ -14,4 +14,4 @@ gradle-convention = [
 ]
 
 [plugins]
-
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
