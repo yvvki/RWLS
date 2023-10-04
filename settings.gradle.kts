@@ -1,5 +1,5 @@
 pluginManagement {
-    includeBuild("build-logic")
+    includeBuild("gradle/convention")
     repositories {
         gradlePluginPortal()
     }
