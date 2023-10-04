@@ -3,7 +3,10 @@ kotlin = "1.9.10"
 
 junit-jupiter = "5.9.3"
 
+lsp4j = "0.21.1"
+
 [libraries]
+lsp4j = { group = "org.eclipse.lsp4j", name = "org.eclipse.lsp4j", version.ref = "lsp4j" }
 
 # Convention
 gradle-kotlin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
