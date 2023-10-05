@@ -30,8 +30,6 @@ class RustedWarfareLanguageServer : LanguageServer, LanguageClientAware, Closeab
         this.client = client
     }
 
-    override fun close() {
-        TODO("Not yet implemented")
-    }
+    override fun close() {}
 
 }
