@@ -8,6 +8,8 @@ class RustedWarfareLanguageServer : LanguageServer, LanguageClientAware, Closeab
     private val textDocumentService = RustedWarfareTextDocumentService()
     private val workspaceService = RustedWarfareWorkspaceService()
     
+    private var client: LanguageClient? = null
+    
     override fun initialize(params: InitializeParams?): CompletableFuture<InitializeResult> {
         TODO("Not yet implemented")
     }
@@ -25,7 +27,7 @@ class RustedWarfareLanguageServer : LanguageServer, LanguageClientAware, Closeab
     override fun getWorkspaceService() = workspaceService
 
     override fun connect(client: LanguageClient?) {
-        TODO("Not yet implemented")
+        this.client = client
     }
 
     override fun close() {
