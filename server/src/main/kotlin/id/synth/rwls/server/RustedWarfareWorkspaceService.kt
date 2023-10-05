@@ -1,3 +1,5 @@
+package id.synth.rwls.server
+
 import org.eclipse.lsp4j.DidChangeConfigurationParams
 import org.eclipse.lsp4j.DidChangeWatchedFilesParams
 import org.eclipse.lsp4j.services.WorkspaceService

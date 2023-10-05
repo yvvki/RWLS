@@ -1,3 +1,5 @@
+package id.synth.rwls.server
+
 import org.eclipse.lsp4j.*
 import org.eclipse.lsp4j.jsonrpc.messages.Either
 import org.eclipse.lsp4j.services.LanguageClient
