@@ -3,6 +3,8 @@ plugins {
 }
 
 dependencies {
+    implementation(libs.lsp4j)
+    implementation(project(":server"))
 }
 
 application {
