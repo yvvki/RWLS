@@ -10,3 +10,5 @@ dependencies {
 application {
     mainClass.set("MainKt")
 }
+
+version = "0.1.0"
