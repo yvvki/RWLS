@@ -1,5 +1,7 @@
 # Rusted Warfare Language Server
 
+[![Build](https://github.com/Synth-ID/RWLS/actions/workflows/build.yml/badge.svg)](https://github.com/Synth-ID/RWLS/actions/workflows/build.yml)
+
 A [language server](https://microsoft.github.io/language-server-protocol/) that provides workspace detection, syntax
 highlighting, code completion and format checker
 for [Rusted Warfare](http://corrodinggames.com/rusted_warfare).
