@@ -1,5 +1,5 @@
-import org.eclipse.lsp4j.InitializeParams
-import org.eclipse.lsp4j.InitializeResult
+import org.eclipse.lsp4j.*
+import org.eclipse.lsp4j.jsonrpc.messages.Either
 import org.eclipse.lsp4j.services.*
 import java.io.Closeable
 import java.util.concurrent.CompletableFuture
@@ -11,7 +11,12 @@ class RustedWarfareLanguageServer : LanguageServer, LanguageClientAware, Closeab
     private var client: LanguageClient? = null
     
     override fun initialize(params: InitializeParams?): CompletableFuture<InitializeResult> {
-        TODO("Not yet implemented")
+        val capabilities = ServerCapabilities().apply { 
+            textDocumentSync = Either.forLeft(TextDocumentSyncKind.Full)
+            completionProvider = CompletionOptions()
+        }
+        
+        return CompletableFuture.supplyAsync { InitializeResult(capabilities) }
     }
 
     override fun shutdown(): CompletableFuture<Any> {
