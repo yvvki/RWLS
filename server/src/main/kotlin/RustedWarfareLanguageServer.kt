@@ -5,6 +5,9 @@ import java.io.Closeable
 import java.util.concurrent.CompletableFuture
 
 class RustedWarfareLanguageServer : LanguageServer, LanguageClientAware, Closeable {
+    private val textDocumentService = RustedWarfareTextDocumentService()
+    private val workspaceService = RustedWarfareWorkspaceService()
+    
     override fun initialize(params: InitializeParams?): CompletableFuture<InitializeResult> {
         TODO("Not yet implemented")
     }
@@ -17,13 +20,9 @@ class RustedWarfareLanguageServer : LanguageServer, LanguageClientAware, Closeab
         TODO("Not yet implemented")
     }
 
-    override fun getTextDocumentService(): TextDocumentService {
-        TODO("Not yet implemented")
-    }
+    override fun getTextDocumentService() = textDocumentService
 
-    override fun getWorkspaceService(): WorkspaceService {
-        TODO("Not yet implemented")
-    }
+    override fun getWorkspaceService() = workspaceService
 
     override fun connect(client: LanguageClient?) {
         TODO("Not yet implemented")
