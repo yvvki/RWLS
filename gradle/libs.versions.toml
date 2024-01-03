@@ -1,7 +1,7 @@
 [versions]
-kotlin = "1.9.10"
+kotlin = "1.9.22"
 
-junit-jupiter = "5.9.3"
+junit-jupiter = "5.10.1"
 
 lsp4j = "0.21.1"
 
